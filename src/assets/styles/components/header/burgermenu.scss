@@ -1,0 +1,105 @@
+.burgermenu {
+    position: fixed;
+    z-index: 99;
+  
+    top: 0;
+    right: -300px;
+  
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+  
+    padding: 25px 20px;
+  
+    background: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  
+    overflow-y: auto;
+    transition: 0.5s ease;
+  
+    &.active {
+      right: 0;
+    }
+  
+    .burgermenu-close {
+      cursor: pointer;
+  
+      width: 24px;
+      height: 24px;
+  
+      .icon.close {
+        width: 100%;
+        height: 100%;
+  
+        background: gray;
+  
+        -webkit-mask: url("data:image/svg+xml,%0A%3Csvg width='17' height='18' viewBox='0 0 17 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.941406 1.3457L16.354 16.7583' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.3545 1.3457L0.941896 16.7583' stroke='black' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        -webkit-mask-size: contain;
+        -webkit-mask-position: center;
+        -webkit-mask-repeat: no-repeat;
+  
+        transition: 0.2s ease;
+      }
+  
+      &:hover {
+        .icon.close {
+          background: red;
+        }
+      }
+    }
+  
+    ul.nav {
+      li.nav-item {
+        a.nav-link {
+          font-family: 'gilroy';
+          font-size: 16px;
+          line-height: 10px;
+          font-weight: 400;
+          color: black;
+  
+          transition: 0.2s ease;
+  
+          &:hover {
+            color: black;
+          }
+  
+          &.active {
+            color: #FFD84E;;
+          }
+        }
+      }
+    }
+  
+    ul.nav.flex-column {
+      li.nav-item {
+  
+        &:first-child {
+          a.nav-link {
+            padding-top: 0;
+          }
+        }
+  
+        a.nav-link {
+          padding: 15px 10px;
+        }
+      }
+    }
+  }
+  .burgermenu-overlay {
+    display: none;
+  
+    position: fixed;
+    z-index: 98;
+  
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 100%;
+  
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+
+
+  
