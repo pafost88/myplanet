@@ -38,34 +38,6 @@ export default function MainPage() {
           slidesToShow: 2,
           slidesToScroll: 1
         }
-      },
-      {
-        breakpoint: 1023,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
       }
     ]
   };
@@ -94,7 +66,7 @@ export default function MainPage() {
                       </h1>
                   </div>
                   <div className="hero-description">
-                    <p>We create best solutions for your buisness from design audit to big data platforms.</p>
+                    <p>We create best solutions for your buisness from design audit to big data platforms. </p>
                   </div>
                   <div className="hero-link">
                     <a href="#" className="hero-a">
