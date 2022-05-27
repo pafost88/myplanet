@@ -120,7 +120,7 @@ export default class PreviousNextMethods extends Component {
               <div className="section-button">
                 <a href="">
                   <button className="button">
-                    View our projects
+                    View our projects 1
                   </button>
                 </a>
               </div>
