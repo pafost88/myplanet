@@ -450,13 +450,13 @@ export default class PreviousNextMethods extends Component {
                     </div>
                   </Slider>
 
-                  <div style={{ textAlign: "center" }}>
-                    <button className="button" onClick={this.previous}>
-                      Previous
-                    </button>
-                    <button className="button" onClick={this.next}>
-                      Next
-                    </button>
+                  <div className="slider-button-block">
+                    <div className="icon-block" onClick={this.previous}>
+                      <div className="icon slideral"></div>
+                    </div>
+                    <div className="icon-block" onClick={this.next}>
+                      <div className="icon sliderar"></div>
+                    </div>
                   </div>
 
                 </div>

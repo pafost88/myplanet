@@ -9,6 +9,11 @@ export default function Footer() {
     <footer>
       <div className="container">
         <div className="row">
+
+          <div className="col-12">
+            1
+          </div>
+
           <div className="col-xxl-6 col-md-5 col-lg-5">
             <div className="row">
               <div className="col-xxl-12 col-sm-6 col-6">

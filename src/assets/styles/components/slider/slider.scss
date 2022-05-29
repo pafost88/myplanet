@@ -108,6 +108,25 @@
       }
 }
 
+.slider-button-block{
+      margin-top: 60px;
+      display: flex;
+      .icon-block{
+            padding: 12px;
+            border: 1px solid #171717;
+            border-radius: 24px;
+            cursor: pointer;
+            .icon{
+                  width: 16px;
+                  height: 16px;
+                  background-color: black;
+            }
+            &:first-child{
+                  margin-right: 20px;
+            }
+      }
+}
+
 
 
 
