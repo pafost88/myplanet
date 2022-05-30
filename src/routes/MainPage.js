@@ -449,7 +449,7 @@ export default class PreviousNextMethods extends Component {
                       </div>
                     </div>
                   </Slider>
-
+    
                   <div className="slider-button-block">
                     <div className="icon-block" onClick={this.previous}>
                       <div className="icon slideral"></div>
