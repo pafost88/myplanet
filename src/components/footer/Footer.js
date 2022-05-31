@@ -1,6 +1,7 @@
 import React from 'react'
 
 import logofooter from '../../assets/images/fotter-logo.svg'
+import logofootermobile from '../../assets/images/fotter-logo-mobile.svg'
 
 
 export default function Footer() {
@@ -12,7 +13,7 @@ export default function Footer() {
 
           <div className="col-12">
             <div className="row">
-              <div className="col-6">
+              <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <div className="fotter-main-content">
                   <div className="content">
                     <div className="fotter-main-title">
@@ -28,7 +29,7 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="col-6">
+              <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-0">
                 <div className="footer-main-logo">
                   <a href="#">
                     <img src={logofooter} className="logo" alt="logo" />
@@ -40,7 +41,7 @@ export default function Footer() {
 
           <div className="col-12">
             <div className="row">
-              <div className="col-4">
+              <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
                 <div className="footer-section">
                   <div className="mail-block">
                     <a href="mailto:info@myplanetdesign.com">info@myplanetdesign.com</a>
@@ -56,7 +57,7 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="col-3">
+              <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-0">
                 <div className="footer-nav">
                   <div className="title">Home</div>
                   <div className="nav">
@@ -70,7 +71,7 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="col-3">
+              <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-0">
                 <div className="footer-nav">
                   <div className="title">Experts in</div>
                   <div className="nav">
@@ -84,7 +85,7 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="col-2">
+              <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-12">
                 <div className="footer-social">
                   <div className="content">
                     <div className="title">Follow us</div>
