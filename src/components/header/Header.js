@@ -49,7 +49,7 @@ function Header() {
               </Link>
             </div>
           </div>
-          <div className="col-10 col-xxl-10 d-none d-xl-block">
+          <div className="col-10 col-xxl-10 ">
             <ul className="nav">
               <li className="nav-item">
                 <NavLink to="/work" className="nav-link" exact>
@@ -61,18 +61,21 @@ function Header() {
                   Menu
                 </NavLink>
               </li>
-              <li className="nav-item">
+              <li className="nav-item fixed">
                 <div className="burgermenu-toggler">
-                  <div className="icon menu"></div>
+                  <div className="icon-block">
+                    <div className="icon menu"></div>
+                  </div>
+
                 </div>
               </li>
             </ul>
           </div>
-          <div className="col-auto d-xl-none">
+          {/* <div className="col-auto mob">
             <div className="burgermenu-toggler">
               <div className="icon menu"></div>
             </div>
-          </div>
+          </div> */}
         </div>
       </header>
       <div className="burgermenu">
@@ -153,10 +156,34 @@ function Header() {
                 </div>
               </div>
             </div>
+            <div className="col-12">
+              <div className="row">
+                <div className="menu-bottom-mobile">
+                  <div className="content">
+                    <div className="col-6">
+                      <div className="link-block">
+                        <a href="">Instagram</a>
+                      </div>
+                      <div className="link-block">
+                        <a href="">Linkedin</a>
+                      </div>
+                    </div>
+                    <div className="col-6">
+                      <div className="link-block">
+                        <a href="">Instagram</a>
+                      </div>
+                      <div className="link-block">
+                        <a href="">Linkedin</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="burgermenu-overlay"></div>
+      {/* <div className="burgermenu-overlay"></div> */}
     </>
 
   );
