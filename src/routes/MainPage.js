@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import Slider from 'react-slick';
+
 import feedback from '../assets/images/feedback.svg';
 import feedicon from '../assets/images/feed-icon.svg';
 
 import Project1 from '../assets/images/projects/img-p1.jpg';
 
-import vt from '../assets/images/trusted/vt.png';
+
 import solve from '../assets/images/trusted/Solve.png';
 import fenster from '../assets/images/trusted/fenster.png';
 import vapulus from '../assets/images/trusted/vapulus.png';
@@ -78,11 +79,11 @@ export default class PreviousNextMethods extends Component {
       ]
     };
 
+    
+
     return (
 
       <main>
-
-
 
         <section className="section hero">
           <div className="container">
@@ -91,17 +92,21 @@ export default class PreviousNextMethods extends Component {
                 <div className="hero-content">
                   <div className="hero-title">
                     <h1>
-                      Digital design &<br/>software agency<br/> that works<span className="yellow">.</span>
+                      Digital design &<br />software agency<br /> that works<span className="yellow">.</span>
                     </h1>
                   </div>
                   <div className="hero-description">
                     <p>
-                        We create best solutions for your buisness<br/>
-                        from design audit to big data platforms. 
+                      We create best solutions for your buisness<br />
+                      from design audit to big data platforms.
                     </p>
                   </div>
                   <div className="hero-link">
                     <a href="#" className="hero-a">
+                      Scroll down
+                      <div className="icon arrow-down"></div>
+                    </a>
+                    <a href="#" className="hero-a-mob">
                       Scroll down
                       <div className="icon arrow-down"></div>
                     </a>
@@ -141,7 +146,7 @@ export default class PreviousNextMethods extends Component {
               </div>
             </div>
           </div>
-          <div className="container no-mp">
+          <div className="container">
             <div className="row">
               <div className="col-12">
                 <div className="row custom-gy-100">
@@ -295,8 +300,8 @@ export default class PreviousNextMethods extends Component {
           </div>
         </section>
 
-        <div className="container">
-          <section className="section">
+        <section className="section trusted">
+          <div className="container">
             <div className="row">
               <div className="trusted-block">
                 <div className="col-12">
@@ -354,44 +359,44 @@ export default class PreviousNextMethods extends Component {
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <section className="section">
-            <div className="feedback">
-              <div className="row">
-                <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
-                  <div className="feedback-slider-block">
-                    <div className="row">
-                      <Slider ref={c => (this.slider = c)} {...feedback}>
-                        <div className="" key={1}>
-                          <div className="slider-block">
-                            <div className="slider-content">
-                              <div className="section-description">
-                                <div className="block-icon">
-                                  <div className="icon dots-up"></div>
+        <section className="section feedback">
+          <div className="container">
+            <div className="row">
+              <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
+                <div className="feedback-slider-block">
+                  <div className="row">
+                    <Slider ref={c => (this.slider = c)} {...feedback}>
+                      <div className="" key={1}>
+                        <div className="slider-block">
+                          <div className="slider-content">
+                            <div className="section-description">
+                              <div className="block-icon">
+                                <div className="icon dots-up"></div>
+                              </div>
+                              <div className="block-text">
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet et est sit accumsan. Eget tincidunt duis enim, nec viverra lacus orci, diam curabitur.
+                                </p>
+                                <div className="block-link">
+                                  <a href="">Case Study <div className="icon arrowupright"></div></a>
                                 </div>
-                                <div className="block-text">
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet et est sit accumsan. Eget tincidunt duis enim, nec viverra lacus orci, diam curabitur.
-                                  </p>
-                                  <div className="block-link">
-                                    <a href="">Case Study <div className="icon arrowupright"></div></a>
+                                <div className="section-feedback">
+                                  <div className="img-block">
+                                    <img src={feedicon} className="" alt="" />
                                   </div>
-                                  <div className="section-feedback">
-                                    <div className="img-block">
-                                      <img src={feedicon} className="" alt="" />
+                                  <div className="title-and-desc">
+                                    <div className="title">
+                                      <h3>
+                                        Alicia Levey
+                                      </h3>
                                     </div>
-                                    <div className="title-and-desc">
-                                      <div className="title">
-                                        <h3>
-                                          Alicia Levey
-                                        </h3>
-                                      </div>
-                                      <div className="desc">
-                                        <p>
-                                          They don’t just execute, they parter.
-                                        </p>
-                                      </div>
+                                    <div className="desc">
+                                      <p>
+                                        They don’t just execute, they parter.
+                                      </p>
                                     </div>
                                   </div>
                                 </div>
@@ -399,99 +404,99 @@ export default class PreviousNextMethods extends Component {
                             </div>
                           </div>
                         </div>
-
-                        <div className="" key={2}>
-                          <div className="slider-block">
-                            <div className="slider-content">
-                              <div className="section-description">
-                                <div className="block-icon">
-                                  <div className="icon dots-up"></div>
-                                </div>
-                                <div className="block-text">
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet et est sit accumsan. Eget tincidunt duis enim, nec viverra lacus orci, diam curabitur.
-                                  </p>
-                                  <div className="block-link">
-                                    <a href="">Case Study <div className="icon arrowupright"></div></a>
-                                  </div>
-                                  <div className="section-feedback">
-                                    <div className="img-block">
-                                      <img src={feedicon} className="" alt="" />
-                                    </div>
-                                    <div className="title-and-desc">
-                                      <div className="title">
-                                        <h3>
-                                          Alicia Levey
-                                        </h3>
-                                      </div>
-                                      <div className="desc">
-                                        <p>
-                                          They don’t just execute, they parter.
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="" key={3}>
-                          <div className="slider-block">
-                            <div className="slider-content">
-                              <div className="section-description">
-                                <div className="block-icon">
-                                  <div className="icon dots-up"></div>
-                                </div>
-                                <div className="block-text">
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet et est sit accumsan. Eget tincidunt duis enim, nec viverra lacus orci, diam curabitur.
-                                  </p>
-                                  <div className="block-link">
-                                    <a href="">Case Study <div className="icon arrowupright"></div></a>
-                                  </div>
-                                  <div className="section-feedback">
-                                    <div className="img-block">
-                                      <img src={feedicon} className="" alt="" />
-                                    </div>
-                                    <div className="title-and-desc">
-                                      <div className="title">
-                                        <h3>
-                                          Alicia Levey
-                                        </h3>
-                                      </div>
-                                      <div className="desc">
-                                        <p>
-                                          They don’t just execute, they parter.
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Slider>
-                    </div>
-
-                    <div className="slider-button-block">
-                      <div className="icon-block" onClick={this.previous}>
-                        <div className="icon slideral"></div>
                       </div>
-                      <div className="icon-block" onClick={this.next}>
-                        <div className="icon sliderar"></div>
-                      </div>
-                    </div>
 
+                      <div className="" key={2}>
+                        <div className="slider-block">
+                          <div className="slider-content">
+                            <div className="section-description">
+                              <div className="block-icon">
+                                <div className="icon dots-up"></div>
+                              </div>
+                              <div className="block-text">
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet et est sit accumsan. Eget tincidunt duis enim, nec viverra lacus orci, diam curabitur.
+                                </p>
+                                <div className="block-link">
+                                  <a href="">Case Study <div className="icon arrowupright"></div></a>
+                                </div>
+                                <div className="section-feedback">
+                                  <div className="img-block">
+                                    <img src={feedicon} className="" alt="" />
+                                  </div>
+                                  <div className="title-and-desc">
+                                    <div className="title">
+                                      <h3>
+                                        Alicia Levey
+                                      </h3>
+                                    </div>
+                                    <div className="desc">
+                                      <p>
+                                        They don’t just execute, they parter.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="" key={3}>
+                        <div className="slider-block">
+                          <div className="slider-content">
+                            <div className="section-description">
+                              <div className="block-icon">
+                                <div className="icon dots-up"></div>
+                              </div>
+                              <div className="block-text">
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet et est sit accumsan. Eget tincidunt duis enim, nec viverra lacus orci, diam curabitur.
+                                </p>
+                                <div className="block-link">
+                                  <a href="">Case Study <div className="icon arrowupright"></div></a>
+                                </div>
+                                <div className="section-feedback">
+                                  <div className="img-block">
+                                    <img src={feedicon} className="" alt="" />
+                                  </div>
+                                  <div className="title-and-desc">
+                                    <div className="title">
+                                      <h3>
+                                        Alicia Levey
+                                      </h3>
+                                    </div>
+                                    <div className="desc">
+                                      <p>
+                                        They don’t just execute, they parter.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </Slider>
                   </div>
+
+                  <div className="slider-button-block">
+                    <div className="icon-block" onClick={this.previous}>
+                      <div className="icon slideral"></div>
+                    </div>
+                    <div className="icon-block" onClick={this.next}>
+                      <div className="icon sliderar"></div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-        </div>
       </main>
 
     )

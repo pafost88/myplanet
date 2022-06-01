@@ -6,11 +6,11 @@
 @import './libraries/slick/slick';
 
 // main
-@import './components/main/main.scss';
 @import './components/hero/hero.scss';
 
 // header
 @import './components/header/header.scss';
+@import './components/menu/menu.scss';
 @import './components/header/burgermenu.scss';
 
 
@@ -31,8 +31,8 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
 
-// Tabs
-@import './components/tabs/tabs.scss';
+
+
 
 // @import url('https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous');
 
