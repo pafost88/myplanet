@@ -13,7 +13,7 @@ export default function Footer() {
 
           <div className="col-12">
             <div className="row">
-              <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <div className="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12">
                 <div className="fotter-main-content">
                   <div className="content">
                     <div className="fotter-main-title">
@@ -23,13 +23,13 @@ export default function Footer() {
                     </div>
                     <div className="fotter-main-description">
                       <h2>
-                        Tell us about it
+                        <a href="">Tell us about it</a>
                       </h2>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-0">
+              <div className="col-xxl-6 col-xl-6 col-lg-0 col-md-0 col-sm-0">
                 <div className="footer-main-logo">
                   <a href="#">
                     <img src={logofooter} className="logo" alt="logo" />
@@ -41,7 +41,7 @@ export default function Footer() {
 
           <div className="col-12">
             <div className="row">
-              <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+              <div className="col-xxl-4 col-xl-4 col-lg-12 col-md-12 col-sm-12">
                 <div className="footer-section">
                   <div className="mail-block">
                     <a href="mailto:info@myplanetdesign.com">info@myplanetdesign.com</a>
@@ -57,7 +57,7 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-0">
+              <div className="col-xxl-3 col-xl-3 col-lg-0 col-md-0 col-sm-0">
                 <div className="footer-nav">
                   <div className="title">Home</div>
                   <div className="nav">
@@ -71,7 +71,7 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-0">
+              <div className="col-xxl-3 col-xl-3 col-lg-0 col-md-0 col-sm-0">
                 <div className="footer-nav">
                   <div className="title">Experts in</div>
                   <div className="nav">
@@ -85,7 +85,7 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-12">
+              <div className="col-xxl-2 col-xl-2 col-lg-12 col-md-12 col-sm-12">
                 <div className="footer-social">
                   <div className="content">
                     <div className="title">Follow us</div>
@@ -95,6 +95,11 @@ export default function Footer() {
                       <a href=""><div className="icon dribbble"></div></a>
                     </div>
                   </div>
+                </div>
+              </div>
+              <div className="col-xxl-0 col-xl-0 col-lg-12 col-md-12 col-sm-12">
+                <div className="footer-logo-mobile">
+                  <img src={logofootermobile} className="logo" alt="logo" />
                 </div>
               </div>
             </div>

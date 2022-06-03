@@ -38,17 +38,16 @@ export default class PreviousNextMethods extends Component {
       slidesToScroll: 1,
       responsive: [
         {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          },
           breakpoint: 768,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
+          },
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
           }
-
         }
       ]
     };
@@ -56,14 +55,23 @@ export default class PreviousNextMethods extends Component {
     const simpleslider = {
       dots: false,
       infinite: true,
-      speed: 4500,
-      autoplaySpeed: 1500,
+      loop: true,
+      speed: 1000,
+      waitForTransition: true,
+      
+      // slidesPerView: 'auto',
+      autoplaySpeed: 3000,
       centerMode: true,
       arrows: false,
       slidesToShow: 5.1,
       autoplay: true,
       slidesToScroll: 1,
       centerPadding: '60px',
+      // autoplay: {
+      //   delay: 1,
+      //   enabled: true,
+      //   waitForTransition: true,
+      // },
       responsive: [
         {
           breakpoint: 768,
@@ -73,7 +81,22 @@ export default class PreviousNextMethods extends Component {
             centerPadding: '10px',
             centerMode: true,
             infinite: true,
-
+          },
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3.13,
+            slidesToScroll: 1,
+            centerPadding: '20px',
+            centerMode: true,
+            infinite: true
+          },
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3.13,
+            slidesToScroll: 1,
+            centerPadding: '20px',
+            centerMode: true,
+            infinite: true
           }
         }
       ]
@@ -104,11 +127,11 @@ export default class PreviousNextMethods extends Component {
                   <div className="hero-link">
                     <a href="#" className="hero-a">
                       Scroll down
-                      <div className="icon arrow-down"></div>
+                      <div className="icon anim arrow-down"></div>
                     </a>
                     <a href="#" className="hero-a-mob">
                       Scroll down
-                      <div className="icon arrow-down"></div>
+                      <div className="icon anim arrow-down"></div>
                     </a>
                   </div>
                 </div>
@@ -146,7 +169,7 @@ export default class PreviousNextMethods extends Component {
               </div>
             </div>
           </div>
-          <div className="container">
+          <div className="container nopm">
             <div className="row">
               <div className="col-12">
                 <div className="row custom-gy-100">
@@ -369,7 +392,7 @@ export default class PreviousNextMethods extends Component {
                 <div className="feedback-slider-block">
                   <div className="row">
                     <Slider ref={c => (this.slider = c)} {...feedback}>
-                      <div className="" key={1}>
+                      <div className="feedback-content" key={1}>
                         <div className="slider-block">
                           <div className="slider-content">
                             <div className="section-description">
@@ -406,7 +429,7 @@ export default class PreviousNextMethods extends Component {
                         </div>
                       </div>
 
-                      <div className="" key={2}>
+                      <div className="feedback-content" key={2}>
                         <div className="slider-block">
                           <div className="slider-content">
                             <div className="section-description">
@@ -443,7 +466,7 @@ export default class PreviousNextMethods extends Component {
                         </div>
                       </div>
 
-                      <div className="" key={3}>
+                      <div className="feedback-content" key={3}>
                         <div className="slider-block">
                           <div className="slider-content">
                             <div className="section-description">
