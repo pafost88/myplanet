@@ -63,7 +63,6 @@ export default class PreviousNextMethods extends Component {
       waitForTransition: true,
       pauseOnHover: false,
       focusOnSelect: true,
-
       autoplaySpeed: 5000,
       centerMode: true,
       arrows: false,
@@ -171,7 +170,8 @@ export default class PreviousNextMethods extends Component {
           <div className="container nopm">
             <div className="row">
               <div className="col-12">
-                <div className="row custom-gy-100">
+                <div className="row">
+
                   <div className="project-block">
                     <div className="col-12">
                       <div className="row">
@@ -202,27 +202,32 @@ export default class PreviousNextMethods extends Component {
                         </div>
                         <div className="col-xxl-6 col-lg-6 col-md-6 first">
                           <div className="project-image-block">
-                            <img src={Project1} className="" alt="Project" />
-                            <div className="img-text">
-                              <a href="">View case study<div className="icon arrowupright"></div></a>
+                            <div className="content">
+                              <img src={Project1} className="" alt="Project" />
+                              <div className="img-text">
+                                <a href="">View case study<div className="icon arrowupright"></div></a>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+
                   <div className="project-block">
                     <div className="col-12">
                       <div className="row">
-                        <div className="col-xxl-6 col-lg-6 col-md-6">
-                          <div className="project-image-block">
-                            <img src={Project1} className="" alt="Project" />
-                            <div className="img-text">
-                              <a href="">View case study<div className="icon arrowupright"></div></a>
+                        <div className="col-xxl-6 col-lg-6 col-md-6 first">
+                        <div className="project-image-block">
+                            <div className="content">
+                              <img src={Project1} className="" alt="Project" />
+                              <div className="img-text">
+                                <a href="">View case study<div className="icon arrowupright"></div></a>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div className="col-xxl-6 col-lg-6 col-md-6">
+                        <div className="col-xxl-6 col-lg-6 col-md-6 second">
                           <div className="project-content-block left">
                             <div className="title-block">
                               <h1>Lorem ipsum</h1>
@@ -250,6 +255,7 @@ export default class PreviousNextMethods extends Component {
                       </div>
                     </div>
                   </div>
+
                   <div className="project-block">
                     <div className="col-12">
                       <div className="row">
@@ -279,28 +285,33 @@ export default class PreviousNextMethods extends Component {
                           </div>
                         </div>
                         <div className="col-xxl-6 col-lg-6 col-md-6 first">
-                          <div className="project-image-block">
-                            <img src={Project1} className="" alt="Project" />
-                            <div className="img-text">
-                              <a href="">View case study<div className="icon arrowupright"></div></a>
+                        <div className="project-image-block">
+                            <div className="content">
+                              <img src={Project1} className="" alt="Project" />
+                              <div className="img-text">
+                                <a href="">View case study<div className="icon arrowupright"></div></a>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  
                   <div className="project-block">
                     <div className="col-12">
                       <div className="row">
-                        <div className="col-xxl-6 col-lg-6 col-md-6">
-                          <div className="project-image-block">
-                            <img src={Project1} className="" alt="Project" />
-                            <div className="img-text">
-                              <a href="">View case study<div className="icon arrowupright"></div></a>
+                        <div className="col-xxl-6 col-lg-6 col-md-6 first">
+                        <div className="project-image-block">
+                            <div className="content">
+                              <img src={Project1} className="" alt="Project" />
+                              <div className="img-text">
+                                <a href="">View case study<div className="icon arrowupright"></div></a>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div className="col-xxl-6 col-lg-6 col-md-6">
+                        <div className="col-xxl-6 col-lg-6 col-md-6 second">
                           <div className="project-content-block left">
                             <div className="title-block">
                               <h1>Lorem ipsum</h1>

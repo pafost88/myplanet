@@ -35,6 +35,7 @@
 
                                     .block-link {
                                           margin-top: 20px;
+                                          display: flex;
 
                                           a {
                                                 display: flex;
@@ -44,10 +45,17 @@
                                                 line-height: 24px;
                                                 font-family: 'Inter';
                                                 text-decoration: none;
-                                                color: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
+
+
+                                                background-color: #2AA5A0;
+                                                background-image: linear-gradient(90deg, #7647D9, #488BEE);
+                                                -webkit-background-clip: text;
+                                                -webkit-text-fill-color: transparent;
+
 
                                                 .icon {
-                                                      background: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
+                                                      background-color: #2AA5A0;
+                                                background-image: linear-gradient(90deg, #7647D9, #488BEE);
                                                       width: 12px;
                                                       height: 12px;
                                                       margin-top: 4px;
