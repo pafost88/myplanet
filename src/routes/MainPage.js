@@ -61,8 +61,9 @@ export default class PreviousNextMethods extends Component {
       loop: true,
       speed: 3000,
       waitForTransition: true,
+      pauseOnHover:false,
+      focusOnSelect: true,
 
-      // slidesPerView: 'auto',
       autoplaySpeed: 5000,
       centerMode: true,
       arrows: false,
@@ -70,11 +71,6 @@ export default class PreviousNextMethods extends Component {
       autoplay: true,
       slidesToScroll: 1,
       centerPadding: '60px',
-      // autoplay: {
-      //   delay: 1,
-      //   enabled: true,
-      //   waitForTransition: true,
-      // },
       responsive: [
         {
           breakpoint: 768,
