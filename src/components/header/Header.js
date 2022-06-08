@@ -79,28 +79,30 @@ function Header() {
         </div>
       </header>
       <div className="burgermenu">
-        <div className="container">
-          <div className="row ">
-            <div className="col-12">
-              <div className="row justify-content-end">
-                <div className="menu-top">
-                  <div className="col-6">
-                    <div className="menu-logo">
-                      <Link to="/">
-                        <img src={MenuLogo} alt="Logo" />
-                      </Link>
-                    </div>
+        <div className="row">
+          <div className="col-12">
+            <div className="row justify-content-end">
+              <div className="menu-top">
+                <div className="col-6">
+                  <div className="menu-logo">
+                    <Link to="/">
+                      <img src={MenuLogo} alt="Logo" />
+                    </Link>
                   </div>
-                  <div className="col-6">
-                    <div className="burgermenu-close-block">
-                      <div className="burgermenu-close">
-                        <div className="icon close"></div>
-                      </div>
+                </div>
+                <div className="col-6">
+                  <div className="burgermenu-close-block">
+                    <div className="burgermenu-close">
+                      <div className="icon close"></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
             <div className="col-12">
               <div className="menu-block">
                 <div className="menu-link">

@@ -61,7 +61,7 @@ export default class PreviousNextMethods extends Component {
       loop: true,
       speed: 3000,
       waitForTransition: true,
-      pauseOnHover:false,
+      pauseOnHover: false,
       focusOnSelect: true,
 
       autoplaySpeed: 5000,
@@ -83,9 +83,9 @@ export default class PreviousNextMethods extends Component {
           },
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3.13,
+            slidesToShow: 3.17,
             slidesToScroll: 1,
-            centerPadding: '20px',
+            centerPadding: '0px',
             centerMode: true,
             infinite: true
           },
@@ -203,6 +203,9 @@ export default class PreviousNextMethods extends Component {
                         <div className="col-xxl-6 col-lg-6 col-md-6 first">
                           <div className="project-image-block">
                             <img src={Project1} className="" alt="Project" />
+                            <div className="img-text">
+                              <a href="">View case study<div className="icon arrowupright"></div></a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -214,6 +217,9 @@ export default class PreviousNextMethods extends Component {
                         <div className="col-xxl-6 col-lg-6 col-md-6">
                           <div className="project-image-block">
                             <img src={Project1} className="" alt="Project" />
+                            <div className="img-text">
+                              <a href="">View case study<div className="icon arrowupright"></div></a>
+                            </div>
                           </div>
                         </div>
                         <div className="col-xxl-6 col-lg-6 col-md-6">
@@ -275,6 +281,9 @@ export default class PreviousNextMethods extends Component {
                         <div className="col-xxl-6 col-lg-6 col-md-6 first">
                           <div className="project-image-block">
                             <img src={Project1} className="" alt="Project" />
+                            <div className="img-text">
+                              <a href="">View case study<div className="icon arrowupright"></div></a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -286,6 +295,9 @@ export default class PreviousNextMethods extends Component {
                         <div className="col-xxl-6 col-lg-6 col-md-6">
                           <div className="project-image-block">
                             <img src={Project1} className="" alt="Project" />
+                            <div className="img-text">
+                              <a href="">View case study<div className="icon arrowupright"></div></a>
+                            </div>
                           </div>
                         </div>
                         <div className="col-xxl-6 col-lg-6 col-md-6">
@@ -399,9 +411,11 @@ export default class PreviousNextMethods extends Component {
                                 <div className="icon dots-up"></div>
                               </div>
                               <div className="block-text">
-                                <p>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet et est sit accumsan. Eget tincidunt duis enim, nec viverra lacus orci, diam curabitur.
-                                </p>
+                                <div className="description">
+                                  <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet et est sit accumsan. Eget tincidunt duis enim, nec viverra lacus orci, diam curabitur.
+                                  </p>
+                                </div>
                                 <div className="block-link">
                                   <a href="">Case Study <div className="icon arrowupright"></div></a>
                                 </div>
@@ -436,9 +450,11 @@ export default class PreviousNextMethods extends Component {
                                 <div className="icon dots-up"></div>
                               </div>
                               <div className="block-text">
-                                <p>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet et est sit accumsan. Eget tincidunt duis enim, nec viverra lacus orci, diam curabitur.
-                                </p>
+                                <div className="description">
+                                  <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet et est sit accumsan. Eget tincidunt duis enim, nec viverra lacus orci, diam curabitur.
+                                  </p>
+                                </div>
                                 <div className="block-link">
                                   <a href="">Case Study <div className="icon arrowupright"></div></a>
                                 </div>
@@ -473,9 +489,11 @@ export default class PreviousNextMethods extends Component {
                                 <div className="icon dots-up"></div>
                               </div>
                               <div className="block-text">
-                                <p>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet et est sit accumsan. Eget tincidunt duis enim, nec viverra lacus orci, diam curabitur.
-                                </p>
+                                <div className="description">
+                                  <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet et est sit accumsan. Eget tincidunt duis enim, nec viverra lacus orci, diam curabitur.
+                                  </p>
+                                </div>
                                 <div className="block-link">
                                   <a href="">Case Study <div className="icon arrowupright"></div></a>
                                 </div>

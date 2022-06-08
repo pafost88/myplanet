@@ -22,13 +22,15 @@
                               .block-text {
                                     max-width: 500px;
 
-                                    p {
-                                          margin: 0;
-                                          font-size: 22px;
-                                          line-height: 33px;
-                                          font-weight: 600;
-                                          font-family: 'Inter';
+                                    .description {
+                                          p {
+                                                margin: 0;
+                                                font-size: 22px;
+                                                line-height: 33px;
+                                                font-weight: 600;
+                                                font-family: 'Inter';
 
+                                          }
                                     }
 
                                     .block-link {
@@ -126,115 +128,120 @@
 
 }
 
-
-
-
 @media screen and (min-width: 320px) and (max-width: 479.98px) {
 
       .feedback {
 
-            .slider-block {
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  max-width: 100%;
+            .feedback-content {
 
-                  .slider-content {
+                  .slider-block {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        max-width: 100%;
 
-                        .section-description {
-                              display: flex;
+                        .slider-content {
 
-                              .block-icon {
-                                    margin-right: 10px;
+                              .section-description {
+                                    display: flex;
 
-                                    .icon {
-                                          min-width: 24px;
-                                          min-height: 20px;
-                                          background: #FFD84E;
-                                    }
-                              }
+                                    .block-icon {
+                                          margin-right: 10px;
 
-                              .block-text {
-                                    max-width: auto;
-
-                                    p {
-                                          margin: 0;
-                                          font-size: 16px;
-                                          line-height: 24px;
-                                          font-weight: 600;
-                                          font-family: 'Inter';
-
+                                          .icon {
+                                                min-width: 24px;
+                                                min-height: 20px;
+                                                background: #FFD84E;
+                                          }
                                     }
 
-                                    .block-link {
-                                          margin-top: 20px;
+                                    .block-text {
+                                          max-width: auto;
 
-                                          a {
+                                          .description {
+                                                p {
+                                                      margin: 0;
+                                                      font-size: 16px;
+                                                      line-height: 24px;
+                                                      font-weight: 600;
+                                                      font-family: 'Inter';
+
+                                                }
+                                          }
+
+                                          .block-link {
+                                                margin-top: 20px;
+
+                                                a {
+                                                      display: flex;
+                                                      align-items: center;
+                                                      font-size: 14;
+                                                      font-weight: 500;
+                                                      line-height: 17px;
+                                                      font-family: 'Inter';
+                                                      text-decoration: none;
+                                                      color: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
+
+                                                      .icon {
+                                                            background: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
+                                                            width: 8px;
+                                                            height: 8px;
+                                                            margin-top: 4px;
+                                                            padding-left: 3rem;
+                                                      }
+
+                                                      &:hover {
+                                                            text-decoration: none;
+                                                      }
+                                                }
+                                          }
+
+
+                                          .section-feedback {
+                                                padding-top: 30px;
                                                 display: flex;
                                                 align-items: center;
-                                                font-size: 14;
-                                                font-weight: 500;
-                                                line-height: 17px;
-                                                font-family: 'Inter';
-                                                text-decoration: none;
-                                                color: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
 
-                                                .icon {
-                                                      background: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
-                                                      width: 8px;
-                                                      height: 8px;
-                                                      margin-top: 4px;
-                                                      padding-left: 3rem;
-                                                }
+                                                .img-block {
+                                                      margin-right: 10px;
 
-                                                &:hover {
-                                                      text-decoration: none;
-                                                }
-                                          }
-                                    }
-
-
-                                    .section-feedback {
-                                          padding-top: 30px;
-                                          display: flex;
-                                          align-items: center;
-
-                                          .img-block {
-                                                margin-right: 10px;
-
-                                                img {
-                                                      width: 32px;
-                                                      height: 32px;
-                                                }
-                                          }
-
-                                          .title-and-desc {
-                                                .title {
-                                                      h3 {
-                                                            font-size: 14px;
-                                                            line-height: 16px;
-                                                            font-weight: 600;
-                                                            font-family: 'Inter';
-                                                            color: #171717;
+                                                      img {
+                                                            width: 32px;
+                                                            height: 32px;
                                                       }
                                                 }
 
-                                                .desc {
-                                                      p {
-                                                            font-size: 12px;
-                                                            line-height: 15px;
-                                                            font-weight: 300;
-                                                            font-family: 'Inter';
-                                                            color: #171717;
+                                                .title-and-desc {
+                                                      .title {
+                                                            h3 {
+                                                                  font-size: 14px;
+                                                                  line-height: 16px;
+                                                                  font-weight: 600;
+                                                                  font-family: 'Inter';
+                                                                  color: #171717;
+                                                            }
+                                                      }
+
+                                                      .desc {
+                                                            p {
+                                                                  font-size: 12px;
+                                                                  line-height: 15px;
+                                                                  font-weight: 300;
+                                                                  font-family: 'Inter';
+                                                                  color: #171717;
+                                                            }
                                                       }
                                                 }
-                                          }
 
+                                          }
                                     }
                               }
                         }
                   }
+
             }
+
+
 
             .slider-button-block {
                   margin-top: 40px;
@@ -265,108 +272,116 @@
 
       .feedback {
 
-            .slider-block {
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  max-width: 100%;
+            .feedback-content {
 
-                  .slider-content {
+                  .slider-block {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        max-width: 100%;
 
-                        .section-description {
-                              display: flex;
+                        .slider-content {
 
-                              .block-icon {
-                                    margin-right: 10px;
+                              .section-description {
+                                    display: flex;
 
-                                    .icon {
-                                          min-width: 24px;
-                                          min-height: 20px;
-                                          background: #FFD84E;
-                                    }
-                              }
+                                    .block-icon {
+                                          margin-right: 10px;
 
-                              .block-text {
-                                    max-width: auto;
-
-                                    p {
-                                          margin: 0;
-                                          font-size: 16px;
-                                          line-height: 24px;
-                                          font-weight: 600;
-                                          font-family: 'Inter';
-
+                                          .icon {
+                                                min-width: 24px;
+                                                min-height: 20px;
+                                                background: #FFD84E;
+                                          }
                                     }
 
-                                    .block-link {
-                                          margin-top: 20px;
+                                    .block-text {
+                                          max-width: auto;
 
-                                          a {
+                                          .description {
+                                                p {
+                                                      margin: 0;
+                                                      font-size: 16px;
+                                                      line-height: 24px;
+                                                      font-weight: 600;
+                                                      font-family: 'Inter';
+
+                                                }
+                                          }
+
+                                          .block-link {
+                                                margin-top: 20px;
+
+                                                a {
+                                                      display: flex;
+                                                      align-items: center;
+                                                      font-size: 14;
+                                                      font-weight: 500;
+                                                      line-height: 17px;
+                                                      font-family: 'Inter';
+                                                      text-decoration: none;
+                                                      color: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
+
+                                                      .icon {
+                                                            background: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
+                                                            width: 8px;
+                                                            height: 8px;
+                                                            margin-top: 4px;
+                                                            padding-left: 3rem;
+                                                      }
+
+                                                      &:hover {
+                                                            text-decoration: none;
+                                                      }
+                                                }
+                                          }
+
+
+                                          .section-feedback {
+                                                padding-top: 30px;
                                                 display: flex;
                                                 align-items: center;
-                                                font-size: 14;
-                                                font-weight: 500;
-                                                line-height: 17px;
-                                                font-family: 'Inter';
-                                                text-decoration: none;
-                                                color: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
 
-                                                .icon {
-                                                      background: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
-                                                      width: 8px;
-                                                      height: 8px;
-                                                      margin-top: 4px;
-                                                      padding-left: 3rem;
-                                                }
+                                                .img-block {
+                                                      margin-right: 10px;
 
-                                                &:hover {
-                                                      text-decoration: none;
-                                                }
-                                          }
-                                    }
-
-
-                                    .section-feedback {
-                                          padding-top: 30px;
-                                          display: flex;
-                                          align-items: center;
-
-                                          .img-block {
-                                                margin-right: 110px;
-
-                                                img {
-                                                      width: 32px;
-                                                      height: 32px;
-                                                }
-                                          }
-
-                                          .title-and-desc {
-                                                .title {
-                                                      h3 {
-                                                            font-size: 14px;
-                                                            line-height: 16px;
-                                                            font-weight: 600;
-                                                            font-family: 'Inter';
-                                                            color: #171717;
+                                                      img {
+                                                            width: 32px;
+                                                            height: 32px;
                                                       }
                                                 }
 
-                                                .desc {
-                                                      p {
-                                                            font-size: 12px;
-                                                            line-height: 15px;
-                                                            font-weight: 300;
-                                                            font-family: 'Inter';
-                                                            color: #171717;
+                                                .title-and-desc {
+                                                      .title {
+                                                            h3 {
+                                                                  font-size: 14px;
+                                                                  line-height: 16px;
+                                                                  font-weight: 600;
+                                                                  font-family: 'Inter';
+                                                                  color: #171717;
+                                                            }
+                                                      }
+
+                                                      .desc {
+                                                            p {
+                                                                  font-size: 12px;
+                                                                  line-height: 15px;
+                                                                  font-weight: 300;
+                                                                  font-family: 'Inter';
+                                                                  color: #171717;
+                                                            }
                                                       }
                                                 }
-                                          }
 
+                                          }
                                     }
                               }
                         }
                   }
+
             }
+
+
 
             .slider-button-block {
                   margin-top: 40px;
@@ -397,106 +412,112 @@
 
       .feedback {
 
-            .slider-block {
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  max-width: 100%;
+            .feedback-content {
 
-                  .slider-content {
+                  .slider-block {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        max-width: 100%;
 
-                        .section-description {
-                              display: flex;
+                        .slider-content {
 
-                              .block-icon {
-                                    margin-right: 10px;
+                              .section-description {
+                                    display: flex;
 
-                                    .icon {
-                                          min-width: 44px;
-                                          min-height: 34px;
-                                          background: #FFD84E;
-                                    }
-                              }
+                                    .block-icon {
+                                          margin-right: 10px;
 
-                              .block-text {
-                                    max-width: auto;
-
-                                    p {
-                                          margin: 0;
-                                          font-size: 22px;
-                                          line-height: 33px;
-                                          font-weight: 600;
-                                          font-family: 'Inter';
+                                          .icon {
+                                                min-width: 44px;
+                                                min-height: 34px;
+                                                background: #FFD84E;
+                                          }
                                     }
 
-                                    .block-link {
-                                          margin-top: 20px;
+                                    .block-text {
+                                          max-width: auto;
 
-                                          a {
+                                          .description {
+                                                p {
+                                                      margin: 0;
+                                                      font-size: 22px;
+                                                      line-height: 33px;
+                                                      font-weight: 600;
+                                                      font-family: 'Inter';
+                                                }
+                                          }
+
+                                          .block-link {
+                                                margin-top: 20px;
+
+                                                a {
+                                                      display: flex;
+                                                      align-items: center;
+                                                      font-size: 18;
+                                                      font-weight: 500;
+                                                      line-height: 24px;
+                                                      font-family: 'Inter';
+                                                      text-decoration: none;
+                                                      color: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
+
+                                                      .icon {
+                                                            background: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
+                                                            width: 8px;
+                                                            height: 8px;
+                                                            margin-top: 4px;
+                                                            padding-left: 3rem;
+                                                      }
+
+                                                      &:hover {
+                                                            text-decoration: none;
+                                                      }
+                                                }
+                                          }
+
+
+                                          .section-feedback {
+                                                padding-top: 20px;
                                                 display: flex;
                                                 align-items: center;
-                                                font-size: 18;
-                                                font-weight: 500;
-                                                line-height: 24px;
-                                                font-family: 'Inter';
-                                                text-decoration: none;
-                                                color: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
 
-                                                .icon {
-                                                      background: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
-                                                      width: 8px;
-                                                      height: 8px;
-                                                      margin-top: 4px;
-                                                      padding-left: 3rem;
-                                                }
+                                                .img-block {
+                                                      margin-right: 20px;
 
-                                                &:hover {
-                                                      text-decoration: none;
-                                                }
-                                          }
-                                    }
-
-
-                                    .section-feedback {
-                                          padding-top: 20px;
-                                          display: flex;
-                                          align-items: center;
-
-                                          .img-block {
-                                                margin-right: 20px;
-
-                                                img {
-                                                      width: 48px;
-                                                      height: 48px;
-                                                }
-                                          }
-
-                                          .title-and-desc {
-                                                .title {
-                                                      h3 {
-                                                            font-size: 16px;
-                                                            line-height: 18px;
-                                                            font-weight: 600;
-                                                            font-family: 'Inter';
-                                                            color: #171717;
+                                                      img {
+                                                            width: 48px;
+                                                            height: 48px;
                                                       }
                                                 }
 
-                                                .desc {
-                                                      p {
-                                                            font-size: 14px;
-                                                            line-height: 16px;
-                                                            font-weight: 300;
-                                                            font-family: 'Inter';
-                                                            color: #171717;
+                                                .title-and-desc {
+                                                      .title {
+                                                            h3 {
+                                                                  font-size: 16px;
+                                                                  line-height: 18px;
+                                                                  font-weight: 600;
+                                                                  font-family: 'Inter';
+                                                                  color: #171717;
+                                                            }
+                                                      }
+
+                                                      .desc {
+                                                            p {
+                                                                  font-size: 14px;
+                                                                  line-height: 16px;
+                                                                  font-weight: 300;
+                                                                  font-family: 'Inter';
+                                                                  color: #171717;
+                                                            }
                                                       }
                                                 }
-                                          }
 
+                                          }
                                     }
                               }
                         }
                   }
+
             }
 
             .slider-button-block {
@@ -528,107 +549,115 @@
 
       .feedback {
 
-            .slider-block {
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  max-width: 100%;
+            .feedback-content {
 
-                  .slider-content {
+                  .slider-block {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        max-width: 100%;
 
-                        .section-description {
-                              display: flex;
+                        .slider-content {
 
-                              .block-icon {
-                                    margin-right: 10px;
+                              .section-description {
+                                    display: flex;
 
-                                    .icon {
-                                          min-width: 44px;
-                                          min-height: 34px;
-                                          background: #FFD84E;
-                                    }
-                              }
+                                    .block-icon {
+                                          margin-right: 10px;
 
-                              .block-text {
-                                    max-width: auto;
-
-                                    p {
-                                          margin: 0;
-                                          font-size: 22px;
-                                          line-height: 33px;
-                                          font-weight: 600;
-                                          font-family: 'Inter';
+                                          .icon {
+                                                min-width: 44px;
+                                                min-height: 34px;
+                                                background: #FFD84E;
+                                          }
                                     }
 
-                                    .block-link {
-                                          margin-top: 20px;
+                                    .block-text {
+                                          max-width: auto;
 
-                                          a {
+                                          .description {
+                                                p {
+                                                      margin: 0;
+                                                      font-size: 22px;
+                                                      line-height: 33px;
+                                                      font-weight: 600;
+                                                      font-family: 'Inter';
+                                                }
+                                          }
+
+                                          .block-link {
+                                                margin-top: 20px;
+
+                                                a {
+                                                      display: flex;
+                                                      align-items: center;
+                                                      font-size: 18;
+                                                      font-weight: 500;
+                                                      line-height: 24px;
+                                                      font-family: 'Inter';
+                                                      text-decoration: none;
+                                                      color: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
+
+                                                      .icon {
+                                                            background: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
+                                                            width: 8px;
+                                                            height: 8px;
+                                                            margin-top: 4px;
+                                                            padding-left: 3rem;
+                                                      }
+
+                                                      &:hover {
+                                                            text-decoration: none;
+                                                      }
+                                                }
+                                          }
+
+
+                                          .section-feedback {
+                                                padding-top: 20px;
                                                 display: flex;
                                                 align-items: center;
-                                                font-size: 18;
-                                                font-weight: 500;
-                                                line-height: 24px;
-                                                font-family: 'Inter';
-                                                text-decoration: none;
-                                                color: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
 
-                                                .icon {
-                                                      background: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
-                                                      width: 8px;
-                                                      height: 8px;
-                                                      margin-top: 4px;
-                                                      padding-left: 3rem;
-                                                }
+                                                .img-block {
+                                                      margin-right: 20px;
 
-                                                &:hover {
-                                                      text-decoration: none;
-                                                }
-                                          }
-                                    }
-
-
-                                    .section-feedback {
-                                          padding-top: 20px;
-                                          display: flex;
-                                          align-items: center;
-
-                                          .img-block {
-                                                margin-right: 20px;
-
-                                                img {
-                                                      width: 48px;
-                                                      height: 48px;
-                                                }
-                                          }
-
-                                          .title-and-desc {
-                                                .title {
-                                                      h3 {
-                                                            font-size: 16px;
-                                                            line-height: 18px;
-                                                            font-weight: 600;
-                                                            font-family: 'Inter';
-                                                            color: #171717;
+                                                      img {
+                                                            width: 48px;
+                                                            height: 48px;
                                                       }
                                                 }
 
-                                                .desc {
-                                                      p {
-                                                            font-size: 14px;
-                                                            line-height: 16px;
-                                                            font-weight: 300;
-                                                            font-family: 'Inter';
-                                                            color: #171717;
+                                                .title-and-desc {
+                                                      .title {
+                                                            h3 {
+                                                                  font-size: 16px;
+                                                                  line-height: 18px;
+                                                                  font-weight: 600;
+                                                                  font-family: 'Inter';
+                                                                  color: #171717;
+                                                            }
+                                                      }
+
+                                                      .desc {
+                                                            p {
+                                                                  font-size: 14px;
+                                                                  line-height: 16px;
+                                                                  font-weight: 300;
+                                                                  font-family: 'Inter';
+                                                                  color: #171717;
+                                                            }
                                                       }
                                                 }
-                                          }
 
+                                          }
                                     }
                               }
                         }
                   }
+
             }
+
+
 
             .slider-button-block {
                   margin-top: 40px;
@@ -657,4 +686,4 @@
 
 @media screen and (min-width: 1200px) and (max-width: 1480.98px) {}
 
-@media (min-width: 1481px) { }
+@media (min-width: 1481px) {}
