@@ -524,7 +524,136 @@
 
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1199.98px) {}
+@media screen and (min-width: 1024px) and (max-width: 1199.98px) {
+
+      .feedback {
+
+            .slider-block {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  max-width: 100%;
+
+                  .slider-content {
+
+                        .section-description {
+                              display: flex;
+
+                              .block-icon {
+                                    margin-right: 10px;
+
+                                    .icon {
+                                          min-width: 44px;
+                                          min-height: 34px;
+                                          background: #FFD84E;
+                                    }
+                              }
+
+                              .block-text {
+                                    max-width: auto;
+
+                                    p {
+                                          margin: 0;
+                                          font-size: 22px;
+                                          line-height: 33px;
+                                          font-weight: 600;
+                                          font-family: 'Inter';
+                                    }
+
+                                    .block-link {
+                                          margin-top: 20px;
+
+                                          a {
+                                                display: flex;
+                                                align-items: center;
+                                                font-size: 18;
+                                                font-weight: 500;
+                                                line-height: 24px;
+                                                font-family: 'Inter';
+                                                text-decoration: none;
+                                                color: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
+
+                                                .icon {
+                                                      background: linear-gradient(149.75deg, #7647D9 -43.94%, #488BEE 71.71%);
+                                                      width: 8px;
+                                                      height: 8px;
+                                                      margin-top: 4px;
+                                                      padding-left: 3rem;
+                                                }
+
+                                                &:hover {
+                                                      text-decoration: none;
+                                                }
+                                          }
+                                    }
+
+
+                                    .section-feedback {
+                                          padding-top: 20px;
+                                          display: flex;
+                                          align-items: center;
+
+                                          .img-block {
+                                                margin-right: 20px;
+
+                                                img {
+                                                      width: 48px;
+                                                      height: 48px;
+                                                }
+                                          }
+
+                                          .title-and-desc {
+                                                .title {
+                                                      h3 {
+                                                            font-size: 16px;
+                                                            line-height: 18px;
+                                                            font-weight: 600;
+                                                            font-family: 'Inter';
+                                                            color: #171717;
+                                                      }
+                                                }
+
+                                                .desc {
+                                                      p {
+                                                            font-size: 14px;
+                                                            line-height: 16px;
+                                                            font-weight: 300;
+                                                            font-family: 'Inter';
+                                                            color: #171717;
+                                                      }
+                                                }
+                                          }
+
+                                    }
+                              }
+                        }
+                  }
+            }
+
+            .slider-button-block {
+                  margin-top: 40px;
+                  display: flex;
+
+                  .icon-block {
+                        padding: 12px;
+                        border: 1px solid #171717;
+                        border-radius: 24px;
+                        cursor: pointer;
+
+                        .icon {
+                              width: 16px;
+                              height: 16px;
+                              background-color: black;
+                        }
+
+                        &:first-child {
+                              margin-right: 20px;
+                        }
+                  }
+            }
+      }
+
+}
 
 @media screen and (min-width: 1200px) and (max-width: 1480.98px) {}
 

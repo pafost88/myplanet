@@ -1,5 +1,8 @@
 import React, { Component } from "react";
+import ReactDOM from 'react-dom';
 import Slider from 'react-slick';
+
+import myOwnScript from '../assets/js/script.js';
 
 import feedback from '../assets/images/feedback.svg';
 import feedicon from '../assets/images/feed-icon.svg';
@@ -56,11 +59,11 @@ export default class PreviousNextMethods extends Component {
       dots: false,
       infinite: true,
       loop: true,
-      speed: 1000,
+      speed: 3000,
       waitForTransition: true,
-      
+
       // slidesPerView: 'auto',
-      autoplaySpeed: 3000,
+      autoplaySpeed: 5000,
       centerMode: true,
       arrows: false,
       slidesToShow: 5.1,
@@ -102,7 +105,7 @@ export default class PreviousNextMethods extends Component {
       ]
     };
 
-    
+
 
     return (
 
