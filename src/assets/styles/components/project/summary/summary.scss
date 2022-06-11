@@ -1,0 +1,128 @@
+section.summary-p {
+    padding-bottom: 40px;
+
+
+    .row {
+        &.center {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .ps-block {
+        .main-title{
+            .section-title {
+                margin-bottom: 50px;
+    
+                h4 {
+                    font-family: 'Inter';
+                    font-size: 32px;
+                    line-height: 38px;
+                    font-weight: 700;
+    
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+
+        .content {
+            padding-bottom: 30px;
+
+            .ps-content {
+                .title-block {
+                    padding-bottom: 10px;
+
+                    h4 {
+                        font-weight: 700;
+                        font-family: 'Inter';
+                        font-size: 18px;
+                        line-height: 24px;
+
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+                .description-block {
+                    p {
+                        font-weight: 400;
+                        font-family: 'Inter';
+                        font-size: 16px;
+                        line-height: 26px;
+
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        .paragraf {
+            padding-top: 80px;
+            padding-bottom: 80px;
+
+            p {
+                font-family: 'Inter';
+                font-size: 18px;
+                line-height: 32px;
+                font-weight: 400;
+
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .h4text-block {
+            padding-bottom: 80px;
+            padding-top: 50px;
+            h4 {
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 56px;
+                font-family: 'Inter';
+
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .info-mini-section{
+
+            .info-block{
+                padding-bottom: 120px;
+
+
+                .section-title{
+                    padding-bottom: 30px;
+                    h4{
+                        font-weight: 800;
+                        font-size: 48px;
+                        line-height: 58px;
+                        font-family: 'Inter';
+
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+    
+                .section-description{
+                    p{
+                        font-size: 18px;
+                        line-height: 32px;
+                        font-weight: 400;
+                        font-family: 'Inter';
+
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+                
+    
+            }
+        }
+
+    }
+
+}
