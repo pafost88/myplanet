@@ -1,0 +1,16 @@
+{
+  "name": "myplanet",
+  "version": "1.0.0",
+  "description": "Developed by pafost",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass ./assets/styles/styles.scss ./assets/styles/styles.css"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "node-sass": "^6.0.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "author": "pafost",
+  "license": "ISC"
+}
