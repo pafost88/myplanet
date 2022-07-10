@@ -218,7 +218,7 @@ export default class PreviousNextMethods extends Component {
                     <div className="col-12">
                       <div className="row">
                         <div className="col-xxl-6 col-lg-6 col-md-6 first">
-                        <div className="project-image-block">
+                          <div className="project-image-block">
                             <div className="content">
                               <img src={Project1} className="" alt="Project" />
                               <div className="img-text">
@@ -285,7 +285,7 @@ export default class PreviousNextMethods extends Component {
                           </div>
                         </div>
                         <div className="col-xxl-6 col-lg-6 col-md-6 first">
-                        <div className="project-image-block">
+                          <div className="project-image-block">
                             <div className="content">
                               <img src={Project1} className="" alt="Project" />
                               <div className="img-text">
@@ -297,12 +297,12 @@ export default class PreviousNextMethods extends Component {
                       </div>
                     </div>
                   </div>
-                  
+
                   <div className="project-block">
                     <div className="col-12">
                       <div className="row">
                         <div className="col-xxl-6 col-lg-6 col-md-6 first">
-                        <div className="project-image-block">
+                          <div className="project-image-block">
                             <div className="content">
                               <img src={Project1} className="" alt="Project" />
                               <div className="img-text">

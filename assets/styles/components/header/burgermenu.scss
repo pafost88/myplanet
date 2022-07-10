@@ -1,6 +1,6 @@
 .burgermenu {
   position: fixed;
-  z-index: 1200;
+  z-index: 4000;
 
  
   left: -100%;
@@ -25,6 +25,7 @@
   }
 
   .menu-top {
+    padding-top: 20px;
     height: 70px;
     display: flex;
     align-items: center;
@@ -74,6 +75,7 @@
   }
 
   .menu-block {
+    
     display: flex;
     justify-content: center;
     text-align: center;
@@ -120,48 +122,6 @@
           width: 100%;
         }
       }
-    
-
-
-
-    // ul.nav {
-    //   text-align: center;
-
-    //   li.nav-item {
-    //     a.nav-link {
-          // font-family: 'Inter';
-          // font-size: 40px;
-          // line-height: 48px;
-          // font-weight: 600;
-          // color: #1E293B;
-          // padding: 0;
-          // margin: 0;
-
-    //       transition: 0.2s ease;
-
-    //       &:after {
-    //         background-color: black;
-    //         display: block;
-    //         content: "";
-    //         height: 3px;
-    //         width: 0%;
-    //         -webkit-transition: width .3s ease-in-out;
-    //         -moz--transition: width .3s ease-in-out;
-    //         transition: width .3s ease-in-out;
-    //       }
-
-    //       &:hover:after,
-    //       &:focus:after {
-    //           width: 100%;
-    //       }
-
-    //       &.active {
-    //         color: white;
-    //         ;
-    //       }
-    //     }
-    //   }
-    // }
 
   }
 
@@ -262,6 +222,7 @@
 @media screen and (min-width: 320px) and (max-width: 479px) {
 
   .burgermenu {
+    padding: 15px 44px 0px 44px;
   
     .menu-top {
       height: 70px;
@@ -432,6 +393,7 @@
 @media screen and (min-width: 480px) and (max-width: 767px) {
 
   .burgermenu {
+    padding: 15px 44px 0px 44px;
   
     .menu-top {
       height: 70px;

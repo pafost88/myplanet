@@ -8,36 +8,6 @@ import MenuLogo from '../../assets/images/menu-logo.svg';
 
 function Header() {
 
-  useEffect(() => {
-    $(document).ready(function () {
-      // header ul.nav dropdown on hover
-      // $('ul.language-switcher > li.dropdown').on('mouseover', function () {
-      //   $(this).find('a.dropdown-toggle').addClass('hovered');
-      //   $(this).find('ul.dropdown-menu').stop().slideDown(300);
-      // });
-
-      // $('ul.nav.language-switcher > li.nav-item.dropdown').on('mouseleave', function () {
-      //   $(this).find('a.dropdown-toggle').removeClass('hovered');
-      //   $(this).find('ul.dropdown-menu').stop().slideUp();
-      // });
-
-
-      // burgermenu toggle
-      $('.burgermenu-toggler').click(function () {
-        $('body').addClass('overflow-hidden');
-        $('.burgermenu').addClass('active');
-        $('.burgermenu-overlay').fadeIn(400);
-      });
-
-      $('.burgermenu-close, .burgermenu-overlay').click(function () {
-        $('body').removeClass('overflow-hidden');
-        $('.burgermenu').removeClass('active');
-        $('.burgermenu-overlay').fadeOut(400);
-      });
-
-    });
-  }, []);
-
   return (
     <>
       <header>
@@ -50,142 +20,63 @@ function Header() {
             </div>
           </div>
           <div className="col-10 col-xxl-10 ">
-            <ul className="nav">
-              <li className="nav-item">
-                <NavLink to="/work" className="nav-link" exact>
-                  Work
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink to="/menu" className="nav-link" exact>
-                  Menu
-                </NavLink>
-              </li>
-              <li className="nav-item fixed">
-                <div className="burgermenu-toggler">
-                  <div className="icon-block">
-                    <div className="icon menu"></div>
-                  </div>
-
-                </div>
-              </li>
-            </ul>
-          </div>
-          {/* <div className="col-auto mob">
-            <div className="burgermenu-toggler">
-              <div className="icon menu"></div>
+            <div className="litle-menu">
+              <ul>
+                <li>
+                  <a href="">Cases</a>
+                </li>
+                <li>
+                  <a href="">Menu</a>
+                </li>
+              </ul>
             </div>
-          </div> */}
+
+            <div class="navigation">
+              <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+              <label for="nav-toggle" class="navigation__button">
+                <span class="navigation__icon" aria-label="toggle navigation menu"></span>
+              </label>
+              <div class="navigation__background"></div>
+
+              <div class="navigation__nav" role="navigation">
+
+                <div className="logo-menu">
+                  <img src={MenuLogo} alt="" />
+                </div>
+                <ul class="navigation__list">
+                  <li class="navigation__item">
+                    <a href="#" class="navigation__link">Cases</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="#" class="navigation__link">Service</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="#" class="navigation__link">About</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="#" class="navigation__link">Trusted</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="#" class="navigation__link">Get in touch</a>
+                  </li>
+                </ul>
+                <div className="bottom-menu">
+                  <div className="menu-section">
+                    <div className="social-block"><a href="">Instagram</a></div>
+                    <div className="social-block mp"><a href="">Linkedin</a></div>
+                  </div>
+                  <div className="menu-section">
+                    <div className="social-block"><a href="">Dribbble</a></div>
+                    <div className="social-block mp"><a href="" className="last">Behance</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </header>
-      <div className="burgermenu">
-        <div className="row">
-          <div className="col-12">
-            <div className="row justify-content-end">
-              <div className="menu-top">
-                <div className="col-6">
-                  <div className="menu-logo">
-                    <Link to="/">
-                      <img src={MenuLogo} alt="Logo" />
-                    </Link>
-                  </div>
-                </div>
-                <div className="col-6">
-                  <div className="burgermenu-close-block">
-                    <div className="burgermenu-close">
-                      <div className="icon close"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div className="menu-block">
-                <div className="menu-link">
-                  <NavLink to="/" className="" exact>
-                    Cases
-                  </NavLink>
-                </div>
-              </div>
-              <div className="menu-block">
-                <div className="menu-link">
-                  <NavLink to="/menu" className="" exact>
-                    Service
-                  </NavLink>
-                </div>
-              </div>
-              <div className="menu-block">
-                <div className="menu-link">
-                  <NavLink to="/bakeries" className="" exact>
-                    About
-                  </NavLink>
-                </div>
-              </div>
-              <div className="menu-block">
-                <div className="menu-link">
-                  <NavLink to="/about" className="" exact>
-                    Trusted
-                  </NavLink>
-                </div>
-              </div>
-              <div className="menu-block">
-                <div className="menu-link">
-                  <NavLink to="/news" className="" exact>
-                    Get in touch
-                  </NavLink>
-                </div>
-              </div>
-            </div>
-            <div className="col-12">
-              <div className="menu-bottom">
-                <div className="content">
-                  <div className="link-block">
-                    <a href="">Instagram</a>
-                  </div>
-                  <div className="link-block">
-                    <a href="">Linkedin</a>
-                  </div>
-                  <div className="link-block">
-                    <a href="">Dribbble</a>
-                  </div>
-                  <div className="link-block">
-                    <a href="">Behance</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-12">
-              <div className="row">
-                <div className="menu-bottom-mobile">
-                  <div className="content">
-                    <div className="col-6">
-                      <div className="link-block">
-                        <a href="">Instagram</a>
-                      </div>
-                      <div className="link-block">
-                        <a href="">Linkedin</a>
-                      </div>
-                    </div>
-                    <div className="col-6">
-                      <div className="link-block">
-                        <a href="">Instagram</a>
-                      </div>
-                      <div className="link-block">
-                        <a href="">Linkedin</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* <div className="burgermenu-overlay"></div> */}
+
     </>
 
   );
