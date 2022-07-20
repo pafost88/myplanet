@@ -40,30 +40,34 @@
                       </div>
                     </div>
                   </div>
-                  <?php if( have_rows('second_fivextwo_first') ): ?>
-                    <?php while ( have_rows('second_fivextwo_first') ) : the_row(); ?>
-                      <div class="content">
-                        <div class="col-12">
-                          <?php if( have_rows('repeater_block') ): ?>
-                            <div class="row">
-                              <?php while ( have_rows('repeater_block') ) : the_row(); ?>
-                                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-12">
-                                  <div class="ps-content">
+                  <div class="col-12">
+                    <?php if( have_rows('second_fivextwo_first') ): ?>
+                      <div class="row">
+                        <?php while ( have_rows('second_fivextwo_first') ) : the_row(); ?>
+                          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-12">
+                            <?php if( have_rows('repeater_block') ): ?>
+                              <div class="ps-content">
+                                <?php while ( have_rows('repeater_block') ) : the_row(); ?>
+                                  <div class="content-block">
                                     <div class="title-block">
                                       <h4><?php the_sub_field('title'); ?></h4>
                                     </div>
-                                    <div class="description-block">
-                                      <p><?php the_sub_field('desc'); ?></p>
-                                    </div>
+                                    <?php if( have_rows('desc_repeater') ): ?>
+                                      <?php while ( have_rows('desc_repeater') ) : the_row(); ?>
+                                        <div class="description-block-ps">
+                                          <p><?php the_sub_field('description'); ?></p>
+                                        </div>
+                                      <?php endwhile; ?>
+                                    <?php endif; ?>
                                   </div>
-                                </div>
-                              <?php endwhile; ?>
-                            </div>
-                          <?php endif; ?>
-                        </div>
+                                <?php endwhile; ?>
+                              </div>
+                            <?php endif; ?>
+                          </div>
+                        <?php endwhile; ?>
                       </div>
-                    <?php endwhile; ?>
-                  <?php endif; ?>
+                    <?php endif; ?>
+                  </div>
                   <div class="col-xxl-7 col-xl-7 col-lg-12 col-md-12 col-sm-12">
                     <div class="paragraf">
                       <p>
@@ -71,30 +75,34 @@
                       </p>
                     </div>
                   </div>
-                  <?php if( have_rows('second_fivextwo_second') ): ?>
-                    <?php while ( have_rows('second_fivextwo_second') ) : the_row(); ?>
-                      <div class="content">
-                        <div class="col-12">
-                          <?php if( have_rows('repeater_block') ): ?>
-                            <div class="row">
-                              <?php while ( have_rows('repeater_block') ) : the_row(); ?>
-                                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-12">
-                                  <div class="ps-content">
+                  <div class="col-12">
+                    <?php if( have_rows('second_fivextwo_second') ): ?>
+                      <div class="row">
+                        <?php while ( have_rows('second_fivextwo_second') ) : the_row(); ?>
+                          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-12">
+                            <?php if( have_rows('repeater_block') ): ?>
+                              <div class="ps-content">
+                                <?php while ( have_rows('repeater_block') ) : the_row(); ?>
+                                  <div class="content-block">
                                     <div class="title-block">
                                       <h4><?php the_sub_field('title'); ?></h4>
                                     </div>
-                                    <div class="description-block">
-                                      <p><?php the_sub_field('desc'); ?></p>
-                                    </div>
+                                    <?php if( have_rows('desc_repeater') ): ?>
+                                      <?php while ( have_rows('desc_repeater') ) : the_row(); ?>
+                                        <div class="description-block-ps">
+                                          <p><?php the_sub_field('description'); ?></p>
+                                        </div>
+                                      <?php endwhile; ?>
+                                    <?php endif; ?>
                                   </div>
-                                </div>
-                              <?php endwhile; ?>
-                            </div>
-                          <?php endif; ?>
-                        </div>
+                                <?php endwhile; ?>
+                              </div>
+                            <?php endif; ?>
+                          </div>
+                        <?php endwhile; ?>
                       </div>
-                    <?php endwhile; ?>
-                  <?php endif; ?>
+                    <?php endif; ?>
+                  </div>
                   <div class="col-xxl-7 col-xl-7 col-lg-12 col-md-12 col-sm-12">
                     <div class="h4text-block">
                       <h4>
@@ -293,6 +301,85 @@
                   <?php endwhile; ?>
                 </div>
               <?php endif; ?>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fifths-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-title-fif">
+                <h2>Other Projects</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="row g-my">
+       
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                  <div class="op-block">
+                    <div class="content">
+                      <div class="img-block">
+                        <img src={one} alt="" />
+                      </div>
+                      <div class="info-block-p">
+                        <div class="title">
+                          <h2>
+                            Lorem ipsum
+                          </h2>
+                        </div>
+                        <div class="desc">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet et est sit accumsan. Eget tincidunt duis enim
+                          </p>
+                        </div>
+                      </div>
+                      <div class="tags-block-p">
+                        <div class="tag">
+                          <p>#Sass</p>
+                        </div>
+                        <div class="tag">
+                          <p>#UX/UI</p>
+                        </div>
+                        <div class="tag">
+                          <p>#Branding</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="conteiner">
+          <div class="row">
+            <div class="col-12">
+            <?php
+$featured_posts = get_field('posts');
+if( $featured_posts ): ?>
+    <ul>
+    <?php foreach( $featured_posts as $post ): 
+
+        // Setup this post for WP functions (variable must be named $post).
+        setup_postdata($post); ?>
+        <li>
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            <span>A custom field from this post: <?php the_field( 'field_name' ); ?></span>
+        </li>
+    <?php endforeach; ?>
+    </ul>
+    <?php 
+    // Reset the global post object so that the rest of the page works correctly.
+    wp_reset_postdata(); ?>
+<?php endif; ?>
             </div>
           </div>
         </div>

@@ -24,104 +24,26 @@
       }
 }
 
-@media screen and (min-width: 0px) and (max-width: 479px) { 
-
-      .feedback{
-            padding-bottom: 50px;
-            .feedback-img-block{
-                  display: none;
-            }
-
-            .main-title{
-                  margin-bottom: 10px;
-                  h1{
-                        font-size: 32px;
-                        line-height: 38px;
-                        font-weight: 900;
-                        font-family: 'gilroy';
-                        .yellow{
-                              color: #FFD84E;;
-                        }
-                  }
-            }
-      }
-
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) { 
-
-      .feedback{
-            padding-bottom: 50px;
-            .feedback-img-block{
-                  display: none;
-            }
-
-            .main-title{
-                  margin-bottom: 10px;
-                  h1{
-                        font-size: 32px;
-                        line-height: 38px;
-                        font-weight: 900;
-                        font-family: 'gilroy';
-                        .yellow{
-                              color: #FFD84E;;
-                        }
-                  }
-            }
-      }
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) { 
-
-      .feedback{
-            padding-bottom: 50px;
-            .feedback-img-block{
-                  display: none;
-            }
-
-            .main-title{
-                  margin-bottom: 10px;
-                  h1{
-                        font-size: 32px;
-                        line-height: 38px;
-                        font-weight: 900;
-                        font-family: 'gilroy';
-                        .yellow{
-                              color: #FFD84E;;
-                        }
-                  }
-            }
-      }
-
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1199px) { 
-
-      .feedback{
-            padding-bottom: 50px;
-            .feedback-img-block{
-                  display: none;
-            }
-
-            .main-title{
-                  margin-bottom: 10px;
-                  h1{
-                        font-size: 32px;
-                        line-height: 38px;
-                        font-weight: 900;
-                        font-family: 'gilroy';
-                        .yellow{
-                              color: #FFD84E;;
-                        }
-                  }
-            }
-      }
-
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1480px) { 
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
 
 
 
 }
+
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
+
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
+
+
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199.98px) {}
+
+@media screen and (min-width: 1200px) and (max-width: 1480.98px) {}
+
+@media (min-width: 1481px) { }

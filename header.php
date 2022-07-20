@@ -10,130 +10,96 @@
 </head>
 <body>
 
-<header>
-        <div class="row align-items-center justify-content-between">
-          <div class="col-2 col-xl-2">
-            <div class="logo">
-              <a href="<?php echo get_field('logo_link', 'option')['url']; ?>" target="<?php echo get_field('logo_link', 'option')['target']; ?>">             
-                <img src="<?php echo get_field('logo', 'option')['url']; ?>" />
-              </a>
-            </div>
-          </div>
-          <div class="col-10 col-xxl-10 ">
-            <?php if( have_rows('menu_repeater', 'option') ): ?>
-              <ul class="nav">
+  <header>
+    <div class="row align-items-center justify-content-between">
+      <div class="col-2 col-xl-2">
+        <div class="logo">
+          <a href="<?php echo get_field('logo_link', 'option')['url']; ?>" target="<?php echo get_field('logo_link', 'option')['target']; ?>">             
+            <img src="<?php echo get_field('logo', 'option')['url']; ?>" />
+          </a>
+        </div>
+      </div>
+      <div class="col-10 col-xxl-10 ">
+        <div class="litle-menu">
+          <!-- <label for="nav-toggle" class="">
+            <h1 class="" aria-label="toggle navigation menu">Menu</h1>
+          </label> -->
+            <ul>
+              <?php if( have_rows('menu_repeater', 'option') ): ?>
                 <?php while ( have_rows('menu_repeater', 'option') ) : the_row(); ?>
-                  <li class="nav-item">
-                    <a href="<?php echo get_sub_field('link', 'option')['url']; ?>" class="nav-link" target="<?php echo get_sub_field('link', 'option')['target']; ?>">             
+                  <li class="lipunkt">
+                    <a href="<?php echo get_sub_field('link', 'option')['url']; ?>" class="" target="<?php echo get_sub_field('link', 'option')['target']; ?>">             
                       <?php echo get_sub_field('link', 'option')['title']; ?>
                     </a>
                   </li>
                 <?php endwhile; ?>
-                <li class="nav-item fixed">
-                  <div class="burgermenu-toggler">
-                    <div class="icon-block">
-                      <div class="icon menu"></div>
-                    </div>
-                  </div>
-                </li>
+              <?php endif; ?>
+              <li>
+                <a href="">
+                  <label for="nav-toggle" class="">
+                    <span class="" aria-label="toggle navigation menu"><?php echo get_field('menu_link', 'option'); ?></span>
+                  </label>
+                </a>
+              </li>
+            </ul>
+        </div>
+        <div class="navigation">
+          <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+          <label for="nav-toggle" class="navigation__button">
+            <span class="navigation__icon" aria-label="toggle navigation menu"></span>
+          </label>
+          <!-- /// -->
+            <div class="navigation__background"></div>
+          <!-- /// -->
+          <div class="navigation__nav" role="navigation">
+            <div class="logo-menu">
+              <a href="<?php echo get_field('logo_menu_link', 'option')['url']; ?>" target="<?php echo get_field('logo_menu_link', 'option')['target']; ?>">             
+                <img src="<?php echo get_field('logo_menu', 'option')['url']; ?>" />
+              </a>
+            </div>
+            <?php if( have_rows('burger_menu', 'option') ): ?>
+              <ul class="navigation__list">
+                <?php while ( have_rows('burger_menu', 'option') ) : the_row(); ?>
+                  <li class="navigation__item">
+                    <!-- <a href="#" class="navigation__link">Cases</a> -->
+                    <a href="<?php echo get_sub_field('link', 'option')['url']; ?>" class="navigation__link" target="<?php echo get_sub_field('link', 'option')['target']; ?>">             
+                      <?php echo get_sub_field('link', 'option')['title']; ?>
+                    </a>
+                  </li>
+                <?php endwhile; ?>
               </ul>
             <?php endif; ?>
-          </div>
-          <!-- <div class="col-auto mob">
-            <div class="burgermenu-toggler">
-              <div class="icon menu"></div>
-            </div>
-          </div> -->
-        </div>
-      </header>
-      <div class="burgermenu">
-        <div class="row">
-          <div class="col-12">
-            <div class="row justify-content-end">
-              <div class="menu-top">
-                <div class="col-6">
-                  <div class="menu-logo">
-                    <a href="<?php echo get_field('logo_menu_link', 'option')['url']; ?>" target="<?php echo get_field('logo_menu_link', 'option')['target']; ?>">             
-                      <img src="<?php echo get_field('logo_menu', 'option')['url']; ?>" />
-                    </a>
-                  </div>
+            <div class="bottom-menu">
+              <div class="menu-section">
+                <div class="social-block">
+                  <a href="<?php echo get_field('instagram_link', 'option')['url']; ?>" target="<?php echo get_field('instagram_link', 'option')['target']; ?>">             
+                    <?php echo get_field('instagram_link', 'option')['title']; ?>
+                  </a>
                 </div>
-                <div class="col-6">
-                  <div class="burgermenu-close-block">
-                    <div class="burgermenu-close">
-                      <div class="icon close"></div>
-                    </div>
-                  </div>
+                <div class="social-block mp">
+                  <a href="<?php echo get_field('linkedin_link', 'option')['url']; ?>" target="<?php echo get_field('linkedin_link', 'option')['target']; ?>">             
+                    <?php echo get_field('linkedin_link', 'option')['title']; ?>
+                  </a>
+                </div>
+              </div>
+              <div class="menu-section">
+                <div class="social-block">
+                  <a href="<?php echo get_field('dribbble_link', 'option')['url']; ?>" target="<?php echo get_field('dribbble_link', 'option')['target']; ?>">             
+                    <?php echo get_field('dribbble_link', 'option')['title']; ?>
+                  </a>
+                </div>
+                <div class="social-block mp">
+                  <a class="last" href="<?php echo get_field('behance_link', 'option')['url']; ?>" target="<?php echo get_field('behance_link', 'option')['target']; ?>">             
+                    <?php echo get_field('behance_link', 'option')['title']; ?>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <?php if( have_rows('burger_menu', 'option') ): ?>
-              <div class="col-12">
-                <?php while ( have_rows('burger_menu', 'option') ) : the_row(); ?>
-                  <div class="menu-block">
-                    <div class="menu-link">
-                      <a href="<?php echo get_sub_field('link', 'option')['url']; ?>" class="nav-link" target="<?php echo get_sub_field('link', 'option')['target']; ?>">             
-                        <?php echo get_sub_field('link', 'option')['title']; ?>
-                      </a>
-                    </div>
-                  </div>
-                <?php endwhile; ?>
-              </div>
-            <?php endif; ?>
-            <div class="col-12">
-              <div class="menu-bottom">
-                <?php if( have_rows('burger_social', 'option') ): ?>
-                  <div class="content">
-                    <?php while ( have_rows('burger_social', 'option') ) : the_row(); ?>
-                        <div class="link-block">
-                          <a href="<?php echo get_sub_field('link', 'option')['url']; ?>" target="<?php echo get_sub_field('link', 'option')['target']; ?>">             
-                            <?php echo get_sub_field('link', 'option')['title']; ?>
-                          </a>
-                        </div>
-                    <?php endwhile; ?>
-                  </div>
-                <?php endif; ?>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="row">
-                <div class="menu-bottom-mobile">
-                  <div class="content">
-                    <div class="col-6">
-                      <div class="link-block">
-                        <a href="<?php echo get_field('linkedin_link', 'option')['url']; ?>" target="<?php echo get_field('linkedin_link', 'option')['target']; ?>">             
-                          <?php echo get_field('linkedin_link', 'option')['title']; ?>
-                        </a>
-                      </div>
-                      <div class="link-block">
-                        <a href="<?php echo get_field('dribbble_link', 'option')['url']; ?>" target="<?php echo get_field('dribbble_link', 'option')['target']; ?>">             
-                          <?php echo get_field('dribbble_link', 'option')['title']; ?>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="link-block">
-                        <a href="<?php echo get_field('instagram_link', 'option')['url']; ?>" target="<?php echo get_field('instagram_link', 'option')['target']; ?>">             
-                          <?php echo get_field('instagram_link', 'option')['title']; ?>
-                        </a>
-                      </div>
-                      <div class="link-block">
-                        <a href="<?php echo get_field('behance_link', 'option')['url']; ?>" target="<?php echo get_field('behance_link', 'option')['target']; ?>">             
-                          <?php echo get_field('behance_link', 'option')['title']; ?>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
-      <!-- <div class="burgermenu-overlay"></div> -->
+    </div>
+  </header>
     
 <main>
